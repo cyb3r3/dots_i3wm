@@ -59,6 +59,7 @@ bindsym $mod+space exec --no-startup-id rofi -show drun -show combi -icon-theme 
 
 bindsym $mod+Tab exec --no-startup-id rofi -show 
 
+bindsym $mod+control+space exec --no-startup-id rofi -show run -show combi -icon-theme "Papirus" -show-icons
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -121,11 +122,11 @@ bindsym $mod+a focus parent
 set $ws1 "1:"
 set $ws2 "2:"
 set $ws3 "3:"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
+set $ws4 "4:"
+set $ws5 "5:"
+set $ws6 "6:"
+set $ws7 "7:"
+set $ws8 "8:"
 set $ws9 "9:"
 set $ws10 "10: "
 
@@ -159,7 +160,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-
 bindsym $mod+Shift+i exec firefox
 
 bindsym $mod+Shift+d exec discord
@@ -214,19 +214,19 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
-gaps inner 30
+gaps inner 20
 
-client.focused #ffffff #000000 #fdf6e3 #000000
+client.focused #627399 #627399 #ffffff #000000
 
 bar {
     position top
     status_command    i3status
     colors {
-        background #141414
+        background #000000
         statusline #ffffff
 
         focused_workspace  #ffffff #000000
-        active_workspace   #c21010 #c21010
+        active_workspace   #74daab #b21947
         inactive_workspace #262626 #141414
         urgent_workspace   #ffffff #900000
     }
@@ -239,4 +239,4 @@ exec --no-startup-id picom -c
 #bindsym $mod+t border normal 0
 
 # no title bar
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
