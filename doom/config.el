@@ -82,9 +82,8 @@
 ;; they are implemented.
 (add-hook! '+doom-dashboard-functions :append
   (insert "\n" (+doom-dashboard--center +doom-dashboard--width "Emacs BTW!")))
-(setq fancy-splash-image "/home/cyb3r/Pictures/emacs-logo-png-transparent-sm.png")
+;;(setq fancy-splash-image "/home/cyb3r/Pictures/emacs-logo-png-transparent-sm.png")
 
 (add-hook! 'window-setup-hook #'treemacs 'append)
 ;; git v
-(setq user-full-name "cyb3r3"
-      user-mail-address "cyb3rrr1@gmail.com.com")
+
