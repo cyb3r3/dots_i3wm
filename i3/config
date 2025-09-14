@@ -240,3 +240,13 @@ exec --no-startup-id picom -c
 
 # no title bar
 for_window [class="^.*"] border pixel 2
+
+#Set as file manager 
+bindsym $mod+g exec "kitty -e ranger"
+
+# AI below
+# Float kitty running ranger with specific size and position
+for_window [class="kitty" title="ranger"] floating enable, move position 560 240, resize set 900 600
+for_window [class="kitty"] floating enable, move position 560 240, resize set 900 600
+
+
