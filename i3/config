@@ -242,7 +242,7 @@ exec --no-startup-id picom -c
 for_window [class="^.*"] border pixel 2
 
 #Set as file manager 
-bindsym $mod+g exec "kitty -e ranger"
+bindsym $mod+shit+Return exec "kitty -e ranger"
 
 # AI below
 # Float kitty running ranger with specific size and position
