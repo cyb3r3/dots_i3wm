@@ -119,7 +119,7 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:"
+set $ws1 " 1:"
 set $ws2 "2:"
 set $ws3 "3:"
 set $ws4 "4:"
@@ -220,18 +220,24 @@ gaps inner 9
 client.focused #627399 #627399 #ffffff #000000
 
 bar {
-       status_command i3status | python3 ~/.config/i3status/wrapper.py
-    status_command i3status
-    position top
+
+    #TODO make this shit work better
+    #status_command i3blocks -c ~/.config/i3blocks/config
+
+        status_command i3status | python3 ~/.config/i3status/wrapper.py
+        #status_command i3status
+        position top
+        #colors true
 
     colors {
         background #000000
-        statusline #AFA7C7
+       statusline #AFA7C7
 
         focused_workspace  #ffffff #285577
         active_workspace   #b21947 #b21947
         inactive_workspace #262626 #444A4C
         urgent_workspace   #ffffff #900000
+
     }
 }
 exec_always feh --bg-scale '/home/debian/Pictures/backgrounds/jet.png'
