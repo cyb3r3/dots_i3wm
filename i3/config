@@ -83,7 +83,7 @@ bindsym $mod+Right focus right
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move righi3lockt
+bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -244,8 +244,9 @@ bar {
         #hidden_state hide
         #modifier Mod1
 
-         padding 2px 560px 3px 10px
+         padding 2px 640px 3px 10px
          tray_padding 3
+         tray_output none
          
 
     colors {
@@ -269,7 +270,20 @@ exec --no-startup-id picom -c
 # no title bar
 for_window [class="^.*"] border pixel 2
 
-bindsym $mod+g exec "kitty -e ranger"
+
+#wip
+#bindsym $mod+Shift+minus move scratchpad
+#bindsym $mod+minus scratchpad
+#for_window [class="scratchterm"] move to scratchpad
+
+#bindsym $mod+t [class="scratchterm"] scratchpad show; move position center
+
+#exec --no-startup-id kitty --class btop -e ranger
+
+#for_window [class="btop"] move to scratchpad
+#bindsym $mod+b [class="btop"] scratchpad show; move position center
+
+
 
 
 # Float kitty running ranger with specific size and position
