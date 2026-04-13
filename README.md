@@ -1,3 +1,4 @@
+Some AI has been used for testing purposes. Later on, I will go out the code to optimize it.
 
 Dot files includes: `i3wm, doom emacs, rofi, ranger, kitty, picom, powermenu, and neofetch.`
 
